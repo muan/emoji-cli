@@ -4,18 +4,22 @@ def __main__(argv)
   else
     if argv[1] && result = DATA[argv[1].to_sym]
       emoji = if result.length > 1
-        i = 0
-        puts "choose:\n#{result.map{|m| i = i + 1; i.to_s + ". " + m}.join("\n")}"
-        print "-> "
-        result[gets.strip.to_i - 1] || result[0]
+        if argv.select{|arg| ["-r", "--random"].include? arg }.any?
+          result[rand(result.length)]
+        else
+          i = 0
+          puts "\n#{result.map{|m| (i = i + 1).to_s + ". " + m}.join("\n")}"
+          print "Choose [1~#{result.length}] "
+          result[gets.strip.to_i - 1] || result[0]
+        end
       else
         result[0]
       end
       cmd = "echo '#{emoji}' | tr -d '\n' | pbcopy"
       `#{cmd}`
-      puts "copied #{emoji} ‼️"
+      puts "Copied #{emoji} !"
     else
-      puts "emoji not found 😭"
+      puts "Emoji not found 😭"
     end
   end
 end
