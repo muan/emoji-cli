@@ -1,6 +1,6 @@
 # emoji-cli
 
-Saw [@_zzak](https://github.com/zzak) & [@hone02](https://github.com/hone)'s talk at #rubykaigi 2015, now playing with [hone/mruby-cli](https://github.com/hone/mruby-cli). Don't mind me.
+Saw [@zzak](https://github.com/zzak) & [@hone](https://github.com/hone)'s talk at #rubykaigi 2015, now playing with [hone/mruby-cli](https://github.com/hone/mruby-cli). Don't mind me.
 
 ## installation, for macs only (at your own risk! :warning:)
 
