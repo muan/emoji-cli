@@ -5,7 +5,8 @@ def __main__(argv)
     if argv[1] && result = DATA[argv[1].to_sym]
       emoji = if result.length > 1
         i = 0
-        puts "choose one from #{result.map{|m| i = i + 1; i.to_s + ": " + m}.join('  ')}"
+        puts "choose:\n#{result.map{|m| i = i + 1; i.to_s + ". " + m}.join("\n")}"
+        print "-> "
         result[gets.strip.to_i - 1] || result[0]
       else
         result[0]
