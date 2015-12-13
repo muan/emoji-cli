@@ -9,34 +9,26 @@ $ emoji-cli xmas
 choose one from 1: 🎅  2: ❄️  3: 🎁  4: 🎄  5: ⛄  6: 🔔
 4
 copied 🎄 ‼️
+
 $ emoji-cli poop
 copied 💩 ‼️
-$ emoji-cli car
-choose one from 1: 🚌  2: 🚐  3: 🚘  4: 🚜
-3
-copied 🚘 ‼️
+
 $ emoji-cli knife
 copied 🔪 ‼️
+
 $ emoji-cli queen
 copied 👸 ‼️
-$ emoji-cli uk
-choose one from 1: 💂  2: 💷
-2
-copied 💷 ‼️
+
 $ emoji-cli british
-choose one from 1: 💂  2: 🍵  3: 💷  4: 🇬🇧
+choose one from 1:   2:   3:   4: 
 4
-copied 🇬🇧 ‼️
-$ emoji-cli sushi
-emoji not found 😭
-$ emoji-cli sashimi
-emoji not found 😭
-$ emoji-cli ramen
-emoji not found 😭
+copied  ‼️
+
 $ emoji-cli noodle
 choose one from 1: 🍜  2: 🍝
 1
 copied 🍜 ‼️
+
 $ emoji-cli fish
 choose one from 1: 🐬  2: 🍣  3: 🎏
 2
