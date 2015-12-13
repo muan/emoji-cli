@@ -38,3 +38,15 @@ $ 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣
 - `--feeling-lucky`
 - pagination?!
 - the exact much for a keyword should come first
+
+## development
+
+Need mruby and docker toolbox.
+
+```bash
+# edit mrblib/emoji-cli.rb
+# compile
+$ docker-composer run compile
+# try
+$ ./mruby/build/i386-apple-darwin14/bin/emoji-cli poop
+```
