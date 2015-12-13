@@ -8,33 +8,24 @@ Head to [releases](https://github.com/muan/emoji-cli/releases), download the ZIP
 
 ## what does this do?
 
+![image](https://cloud.githubusercontent.com/assets/1153134/11766088/a080f2d6-a1b9-11e5-8033-b80c028ad9f8.png)
+
 ```
-$ emoji-cli xmas
-choose one from 1: 🎅  2: ❄️  3: 🎁  4: 🎄  5: ⛄  6: 🔔
-4
-copied 🎄 ‼️
+$ emoji-cli angry
+choose:
+1. 👿
+2. 😠
+3. 😡
+4. 👊
+5. 💢
+-> 3
+copied 😡 ‼️
 
 $ emoji-cli poop
 copied 💩 ‼️
 
-$ emoji-cli knife
-copied 🔪 ‼️
-
-$ emoji-cli queen
-copied 👸 ‼️
-
-$ emoji-cli british
-choose one from 1:   2:   3:   4: 
-4
-copied  ‼️
-
-$ emoji-cli noodle
-choose one from 1: 🍜  2: 🍝
-1
-copied 🍜 ‼️
-
-$ emoji-cli fish
-choose one from 1: 🐬  2: 🍣  3: 🎏
-2
+$ emoji-cli sushi
 copied 🍣 ‼️
+
+$ 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣
 ```
