@@ -10,7 +10,7 @@ def __main__(argv)
       else
         result[0]
       end
-      cmd = "echo -n '#{emoji}' | pbcopy"
+      cmd = "echo '#{emoji}' | tr -d '\n' | pbcopy"
       `#{cmd}`
       puts "copied #{emoji} ‼️"
     else
