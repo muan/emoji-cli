@@ -8,7 +8,7 @@ Head to [releases](https://github.com/muan/emoji-cli/releases), download the ZIP
 
 ## what does this do?
 
-![image](https://cloud.githubusercontent.com/assets/1153134/11766088/a080f2d6-a1b9-11e5-8033-b80c028ad9f8.png)
+![image](https://cloud.githubusercontent.com/assets/1153134/11780944/439ed114-a2a9-11e5-80e3-0c05d960e78e.png)
 
 ```
 $ emoji-cli angry
