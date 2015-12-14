@@ -33,10 +33,7 @@ $ 🍣 🍣 🍣 🍣 🍣 🍣 !!!!
 
 - cross platform
 - fix the tests
-- better emojilib integration
-- `--feeling-lucky`
 - pagination?!
-- the exact much for a keyword should come first
 
 ## development
 
