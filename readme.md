@@ -8,25 +8,31 @@ Head to [releases](https://github.com/muan/emoji-cli/releases), download the ZIP
 
 ## what does this do?
 
-![image](https://cloud.githubusercontent.com/assets/1153134/11780944/439ed114-a2a9-11e5-80e3-0c05d960e78e.png)
+![image](https://cloud.githubusercontent.com/assets/1153134/11781050/35ab1cce-a2aa-11e5-8cb6-af446dbc541c.png)
 
 ```
-$ emoji-cli angry
-1. 😠
-2. 👿
-3. 😡
-4. 👊
-5. 💢
-Choose [1~5] 2
-Copied 👿 !
+$ emoji-cli flowers --random
+Copied 🌺 !
 
-$ emoji-cli poop
-Copied 💩 !
+$ emoji-cli flowers --random
+Copied 🌹 !
 
-$ emoji-cli sushi
-Copied 🍣 !
+$ emoji-cli fruit --random
+Copied 🍍 !
 
-$ 🍣 🍣 🍣 🍣 🍣 🍣 !!!!
+$ emoji-cli fruit --random
+Copied 🍒 !
+
+$ emoji-cli halloween
+1. 👻
+2. 👹
+3. 🎃
+4. 🏮
+Choose [1~4] 3
+Copied 🎃 !
+
+$ emoji-cli noodle -r
+Copied 🍜 !
 ```
 
 ## todo
