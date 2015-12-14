@@ -12,22 +12,21 @@ Head to [releases](https://github.com/muan/emoji-cli/releases), download the ZIP
 
 ```
 $ emoji-cli angry
-choose:
-1. 👿
-2. 😠
+1. 😠
+2. 👿
 3. 😡
 4. 👊
 5. 💢
--> 3
-copied 😡 ‼️
+Choose [1~5] 2
+Copied 👿 !
 
 $ emoji-cli poop
-copied 💩 ‼️
+Copied 💩 !
 
 $ emoji-cli sushi
-copied 🍣 ‼️
+Copied 🍣 !
 
-$ 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣 🍣
+$ 🍣 🍣 🍣 🍣 🍣 🍣 !!!!
 ```
 
 ## todo
