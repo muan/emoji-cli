@@ -20,11 +20,20 @@ def __main__(argv)
       end
 
       # copy emoji and notify
-      cmd = "echo '#{emoji}' | tr -d '\n' | pbcopy"
-      `#{cmd}`
+      copy emoji
       puts "Copied #{emoji} !"
     else
       puts "Emoji not found 😭"
     end
   end
+end
+
+def copy emoji
+  os = `uname`.strip
+  cmd = if os == "Darwin"
+    "echo '#{emoji}' | tr -d '\n' | pbcopy"
+  else
+    "echo '#{emoji}' | tr -d '\n' | xclip -sel clipboard"
+  end
+  `#{cmd}`
 end
