@@ -33,7 +33,7 @@ def copy emoji
   cmd = if os == "Darwin"
     "echo '#{emoji}' | tr -d '\n' | pbcopy"
   else
-    "echo '#{emoji}' | tr -d '\n' | xclip -sel clipboard"
+    "echo '#{emoji}' | tr -d '\n' | xclip -i"
   end
   `#{cmd}`
 end
