@@ -13,7 +13,7 @@ end
 assert('poop') do
   # Process hangs mysteriously, this is a workaround
   pid = fork do
-    `echo && #{BIN_PATH} poop`
+    `#{BIN_PATH} poop`
   end
   # Wait a tiny bit for things to be copied
   sleep 0.1
