@@ -1,6 +1,13 @@
 class TestEmojiCli < MTest::Unit::TestCase
-  def test_main
-    assert_nil __main__([])
+  def test_search
+    assert_equal search("poop"), ["💩"]
+  end
+
+  def test_choose
+    assert_equal choose(["💩"], false), "💩"
+    assert_block "when random is on just return a random one" do
+      ["💩", "🎉"].include? choose(["💩", "🎉"], true)
+    end
   end
 end
 
