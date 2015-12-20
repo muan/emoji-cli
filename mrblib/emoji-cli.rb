@@ -4,7 +4,8 @@ def __main__(argv)
   else
     if result = search(argv[1])
       # copy emoji and notify
-      copy choose_emoji(result, argv.select{|arg| ["-r", "--random"].include? arg }.any?)
+      emoji = choose(result, argv.select{|arg| ["-r", "--random"].include? arg }.any?)
+      copy emoji
       puts "Copied #{emoji} !"
     else
       puts "Emoji not found 😭"
@@ -16,7 +17,7 @@ def search keyword
   EmojiCli::DATA[keyword.downcase]
 end
 
-def which_emoji result, random
+def choose result, random
   if result.length > 1
     # if -r return a random emoji from result
     if random
@@ -36,10 +37,10 @@ end
 
 def copy emoji
   os = `uname`.strip
-  # cmd = if os == "Darwin"
-  #   "echo '#{emoji}' | tr -d '\n' | pbcopy"
-  # else
-  #   "echo '#{emoji}' | tr -d '\n' | xclip -i"
-  # end
-  # `#{cmd}`
+  cmd = if os == "Darwin"
+    "echo '#{emoji}' | tr -d '\n' | pbcopy"
+  else
+    "echo '#{emoji}' | tr -d '\n' | xclip -i"
+  end
+  `#{cmd}`
 end

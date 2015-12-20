@@ -4,9 +4,9 @@ class TestEmojiCli < MTest::Unit::TestCase
   end
 
   def test_which_emoji
-    assert_equal which_emoji(["💩"], false), "💩"
+    assert_equal choose(["💩"], false), "💩"
     assert_block "when random is on just return a random one" do
-      ["💩", "🎉"].include? which_emoji(["💩", "🎉"], true)
+      ["💩", "🎉"].include? choose(["💩", "🎉"], true)
     end
   end
 end

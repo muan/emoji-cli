@@ -1,7 +1,5 @@
-require 'open3'
-
 pid = fork do
-    `Xvfb :1 2>&1 >/dev/null`
+  `Xvfb :1 2>&1 >/dev/null`
 end
 
 ENV['DISPLAY'] = ':1.0'
@@ -11,7 +9,7 @@ BIN_PATH = File.join(File.dirname(__FILE__), "../mruby/bin/emoji-cli")
 
 assert('poop') do
   pid2 = fork do
-      `#{BIN_PATH} poop`
+    `#{BIN_PATH} poop`
   end
   sleep 2
   assert_equal "💩", `xclip -o`.force_encoding("utf-8")
