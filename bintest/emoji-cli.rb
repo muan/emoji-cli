@@ -1,19 +1,8 @@
-pid = fork do
-  `Xvfb :1 2>&1 >/dev/null`
-end
-
-ENV['DISPLAY'] = ':1.0'
-
-sleep 2
 BIN_PATH = File.join(File.dirname(__FILE__), "../mruby/bin/emoji-cli")
 
-assert('poop') do
-  pid2 = fork do
-    `#{BIN_PATH} poop`
-  end
-  sleep 2
-  assert_equal "💩", `xclip -o`.force_encoding("utf-8")
-  Process.kill "TERM", pid2
+# Set up display for xclip
+fork do
+  `Xvfb :1 2>&1 >/dev/null`
 end
 
 assert('version') do
@@ -21,4 +10,14 @@ assert('version') do
   assert_include output, "v0.0.3"
 end
 
-Process.kill "TERM", pid
+assert('poop') do
+  # Process hangs mysteriously, this is a workaround
+  pid = fork do
+    `echo && #{BIN_PATH} poop`
+  end
+  # Wait a tiny bit for things to be copied
+  sleep 0.1
+
+  assert_equal "💩", `xclip -o`.force_encoding("utf-8")
+  Process.kill "TERM", pid
+end

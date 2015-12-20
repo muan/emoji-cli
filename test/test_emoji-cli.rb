@@ -3,7 +3,7 @@ class TestEmojiCli < MTest::Unit::TestCase
     assert_equal search("poop"), ["💩"]
   end
 
-  def test_which_emoji
+  def test_choose
     assert_equal choose(["💩"], false), "💩"
     assert_block "when random is on just return a random one" do
       ["💩", "🎉"].include? choose(["💩", "🎉"], true)
