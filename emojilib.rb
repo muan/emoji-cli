@@ -1,5 +1,4 @@
 require 'json'
-require 'yaml'
 
 data = JSON.parse `curl https://raw.githubusercontent.com/muan/emojilib/master/emojis.json`
 new_data = {}

@@ -9,6 +9,7 @@ test:
 bintest:
   <<: *defaults
   command: rake test:bintest
+  dockerfile: Dockerfile-test
 mtest:
   <<: *defaults
   command: rake test:mtest
@@ -18,3 +19,4 @@ clean:
 shell:
   <<: *defaults
   command: bash
+  dockerfile: Dockerfile-test

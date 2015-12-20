@@ -15,11 +15,11 @@ MRuby::Build.new do |conf|
   gem_config(conf)
 end
 
-# MRuby::Build.new('x86_64-pc-linux-gnu') do |conf|
-#   toolchain :gcc
+MRuby::Build.new('x86_64-pc-linux-gnu') do |conf|
+  toolchain :gcc
 
-#   gem_config(conf)
-# end
+  gem_config(conf)
+end
 
 # MRuby::CrossBuild.new('i686-pc-linux-gnu') do |conf|
 #   toolchain :gcc
