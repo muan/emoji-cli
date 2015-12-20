@@ -1,4 +1,4 @@
-# emoji-cli
+# emoji-cli [![Build Status](https://travis-ci.org/muan/emoji-cli.svg?branch=master)](https://travis-ci.org/muan/submarine)
 
 Saw [@zzak](https://github.com/zzak) & [@hone](https://github.com/hone)'s talk at #rubykaigi 2015, now playing with [hone/mruby-cli](https://github.com/hone/mruby-cli). Don't mind me.
 
