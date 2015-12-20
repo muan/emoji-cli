@@ -53,7 +53,6 @@ namespace :test do
 
   desc "run integration tests"
   task :bintest => :compile do
-
     MRuby.each_target do |target|
       clean_env(%w(MRUBY_ROOT MRUBY_CONFIG)) do
         run_bintest if target.bintest_enabled?
